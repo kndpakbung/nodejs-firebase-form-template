@@ -3,7 +3,7 @@ const express        = require("express"),
       admin          = require("firebase-admin"),
       firebase       = require('firebase')
       require('firebase/auth'),
-      serviceAccount = require("./notional-cirrus-228007-firebase-adminsdk-covxu-b262e29fbd.json");
+      serviceAccount = require("path/to/serviceAccountKey.json");
 
 //Firebase initialized
 var firebaseAdmin = admin.initializeApp({
