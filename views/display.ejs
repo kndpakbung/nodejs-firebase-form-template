@@ -1,0 +1,23 @@
+<% if (data) { %>
+  <p><h1>Hi <%=data.Name%>,</h1></p>
+  <h3><p>Here are your details: </p></h3>
+  <p>Name: <%=data.Name%></p>
+  <p>DOB: <%=data.DOB%></p>
+  <p>Branch: <%=data.Branch%></p>
+  <p>Year: <%=data.Year%></p>
+  <p>SapID: <%=data.SapID%></p>
+  <p>Email: <%=data.Email%></p>
+  <p>PhoneNumber: <%=data.PhoneNumber%></p>
+  <p>WhatsappNumber: <%=data.WhatsappNumber%></p>
+  <p>TypeOfMembership: <%=data.TypeOfMembership%></p>
+  <p><b>To change or update your data go to this <a href="/form">URL</b></p>
+  <p><a href="/">Go Back</p>
+<% } %>
+<% if (!data) { %>
+  <form action="/display" method="post">
+    <label>SapID:</label>
+    <input type="text" name="sapid">
+    <input type="submit" name="submit" value="fetch">
+    <!-- <input type="submit" name="submit" value="updatte"> -->
+  </form>
+<% } %>
