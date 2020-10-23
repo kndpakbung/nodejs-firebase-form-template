@@ -3,7 +3,7 @@ const express        = require("express"),
       admin          = require("firebase-admin"),
       firebase       = require('firebase')
       require('firebase/auth'),
-      serviceAccount = require("path/to/serviceAccountKey.json");
+      serviceAccount = require("./serviceAccountKey.json");
 
 //Firebase initialized
 var firebaseAdmin = admin.initializeApp({
